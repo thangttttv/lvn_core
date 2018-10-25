@@ -90,18 +90,16 @@ public class SaoConstant {
 	public static final String KIEP_SAT="Kiếp sát";
 	public static final String KHONG_PHONG="Không phòng";
 	public static final String TU_THOI_CO_QUA="Tứ thời cô quả";
-	
 	public static final String THIEN_ON="Thiên ôn";
 	public static final String CUU_KHONG="Cửu không";
 	public static final String AM_THAC="Âm thác";
 	public static final String THIEN_DIA_CHUYEN_SAT="Thiên địa chuyển sát";
-	
+	public static final String LO_BAN_SAT="Lỗ ban sát";
 	
 	public static final String THO_ON ="Thổ ôn (Thiên cẩu)";
-	public static final String NGUYET_HOA="Nguyệt Hỏa";
 	
 	
-	public static final String LO_BAN_SAT="Lỗ ban sát";
+	
 	public static final String DUONG_THAC="Dương thác";
 	public static final String DOC_HOA="Độc Hỏa";
 	

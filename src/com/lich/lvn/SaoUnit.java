@@ -241,8 +241,6 @@ public class SaoUnit {
 		saoMap.put(SaoConstant.CAU_TRAN, sao);
 		sao = new Sao(SaoConstant.THIEN_LAI, "Xấu", "", " Xấu mọi việc", "");
 		saoMap.put(SaoConstant.THIEN_LAI, sao);
-		sao = new Sao(SaoConstant.NGUYET_HOA, "Xấu", "", " Xấu đối với sửa sang nhà cửa; đổ mái; xây bếp", "");
-		saoMap.put(SaoConstant.NGUYET_HOA, sao);
 		sao = new Sao(SaoConstant.TAM_TANG, "Xấu", "", " Kỵ khởi tạo; cưới hỏi; an táng", "");
 		saoMap.put(SaoConstant.TAM_TANG, sao);
 		sao = new Sao(SaoConstant.THO_CAM, "Xấu", "", " Kỵ xây dựng nhà cửa; an táng", "");
@@ -427,7 +425,8 @@ public class SaoUnit {
 			"Nguyệt Hư","Hoàng Sa","Lục Bất Thành","Nhân Cách","Thần Cách","Bạch Hổ","Huyền Vũ","Câu Trận","Lôi Công","Cô Thần","Chu Tước"
 			,"Trùng phục","Quỷ khốc","Tam Tang"
 			,"Ngũ Hư","Tứ Thời Đại Mộ","Thổ Cấm","Ly Sàng","Trùng Tang",SaoConstant.VANG_VONG,SaoConstant.DIA_PHA,SaoConstant.HOANG_VU,
-			SaoConstant.THO_PHU,SaoConstant.THU_TU,SaoConstant.NGUYET_PHA,SaoConstant.KIEP_SAT,SaoConstant.KHONG_PHONG};
+			SaoConstant.THO_PHU,SaoConstant.THU_TU,SaoConstant.NGUYET_PHA,SaoConstant.KIEP_SAT,SaoConstant.KHONG_PHONG,SaoConstant.TU_THOI_CO_QUA,
+			SaoConstant.THIEN_ON,SaoConstant.CUU_KHONG,SaoConstant.AM_THAC,SaoConstant.THIEN_DIA_CHUYEN_SAT};
 	
 	public static List<String> saoSauXuatHienTheoNgayAm(int thangAl, String ngayCanChi) {
 		List<String> saoXuatHien = new ArrayList<>();
@@ -485,6 +484,11 @@ public class SaoUnit {
 		String nguyet_pha[] ="Thân,Thân;Dậu,Tuất,Dậu,Tuất,Dậu,Tuất;Tuất,Tuất;Hợi,Hợi,Hợi;Sửu,Tý,Sửu,Tý,Sửu;Sửu,Sửu;Dần,Dần,Dần;Mão,Thìn,Mão,Thìn;Thìn,Thìn;Tị,Tị,Tị;Ngọ,Mùi,Ngọ,Mùi;Mùi,Mùi,Mùi".split(";");
 		String kiep_sat[] = "Hợi,Hợi;Thân,Thân,Thân;Tị,Tị,Tị;Dần,Dần;Hợi,Hợi;Thân,Thân,Thân;Tị,Tị;Dần,Dần;Hợi,Hợi,Hợi;Thân,Thân,Thân;Tị,Tị;Dần,Dần".split(";");
 		String phong_khong[] = "Thìn,Tị,Tý,Tuất,Hợi,Mùi,Dần,Mão,Ngọ,Thân,Dậu,Sửu".split(";");
+		String tu_thoi_co_qua[] = "Sửu;Sửu;Sửu;Thìn;Thìn;Thìn;Mùi;Mùi;Mùi;Tuất;Tuất;Tuất".split(";");
+		String thien_on[] = "Mùi,Mùi,Mùi;Tuất,Tuất,Tuất;Thìn,Thìn,Thìn;Dần,Dần;Ngọ,Ngọ;Tý,Tý,Tý,Tý,Tý;Dậu,Dậu,Dậu;Thân,Thân;Tị,Tị,Tị;Hợi,Hợi,Hợi;Sửu;Mão,Mão".split(";");
+		String cuu_khong[] = "Thìn,Thìn,Thìn;Sửu,Sửu,Sửu;Tuất,Tuất;Mùi,Mùi,Mùi;Mão,Mão,Mão;Tý,Tý;Dậu,Dậu;Ngọ,Ngọ,Ngọ;Dần,Dần,Dần;Hợi,Hợi;Thân,Thân;Tị,Tị,Tị".split(";");
+		String am_thac[] = "KC;Tân Dậu;Canh Thân;Đinh Mùi;KC;Đinh Tị;Giáp Thìn;Ất Mão;KC;Quý Sửu;KC;Quý Hợi".split(";");
+		String thien_dia_chuyen_sat[] = "Ất Mão;Ất Mão;Ất Mão;Bính Ngọ;KC;Bính Ngọ;KC;Tân Dậu;KC;Nhâm Tý;KC;Nhâm Tý".split(";");
 		
 		List<String[]> saos = new ArrayList<>();
 		saos.add(thien_tac);saos.add(dia_tac);saos.add(hoa_tai);saos.add(nguyet_hoa_doc_hoa);saos.add(nguyet_yem_dai_hoa);
@@ -493,7 +497,7 @@ public class SaoUnit {
 		saos.add(qua_tu);saos.add(sat_chu);saos.add(nguyet_hinh);saos.add(toi_chi);saos.add(thien_cuong);saos.add(thien_lai);saos.add(thien_nguc);saos.add(thien_hoa);saos.add(tieu_hong_sa);saos.add(dai_hao);saos.add(tieu_hao);saos.add(nguyet_hu);saos.add(hoang_sa);saos.add(luc_bat_thanh);saos.add(nhan_cach);saos.add(than_cach);saos.add(bach_ho);saos.add(huyen_vu);saos.add(cau_tran);saos.add(loi_cong);saos.add(co_than);saos.add(chu_tuoc);saos.add(trung_phuc);saos.add(quy_coc);saos.add(tam_tang);
 		saos.add(ngu_hu);saos.add(tu_thoi_dai_mo);saos.add(tho_cam);saos.add(ly_sang);saos.add(trung_tang);saos.add(vang_vong);
 		saos.add(dia_pha);saos.add(hoang_vu);saos.add(tho_phu);saos.add(thu_tu);saos.add(nguyet_pha);saos.add(kiep_sat);
-		saos.add(phong_khong);
+		saos.add(phong_khong);saos.add(tu_thoi_co_qua);saos.add(thien_on);saos.add(cuu_khong);saos.add(am_thac);saos.add(thien_dia_chuyen_sat);
 		
 		System.out.println("saos Xau:-------------->"+saos.size());
 		int i = 0;

@@ -3,7 +3,6 @@ package com.lich.lvn;
 import com.lich.lvn.model.NhiThapBatTu;
 
 public class NhiThapBatTuUnit {
-
 	public NhiThapBatTuUnit() {
 		// TODO Auto-generated constructor stub
 	}
