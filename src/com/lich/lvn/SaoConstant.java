@@ -43,7 +43,7 @@ public class SaoConstant {
 	public static final String NGUYET_KIEM_CHUYEN_SAT = "Nguyệt Kiến chuyển sát";
 	public static final String THIEN_DIA_CHINH_CHUYEN = "Thiên Địa Chính Chuyển";
 	public static final String SAO_LO_BAN_SAT = "Sao Lỗ Ban Sát";
-	public static final String SAO_PHU_DAU_SAT = "Sao Phủ Đầu Sát";
+	public static final String PHU_DAU_SAT = "Phủ Đầu Sát";
 	public static final String PHI_MA_SAT = "Phi Ma Sát";
 	public static final String NGU_QUY = "Ngũ Quỷ";
 	public static final String BANG_TIEU_NGO_HAM = "Băng Tiêu Ngọa Hãm";
@@ -97,10 +97,12 @@ public class SaoConstant {
 	public static final String NGUYET_HOA="Nguyệt Hỏa";
 	public static final String TAM_TANG="Tam tang";
 	public static final String THO_CAM="Thổ cẩm";
-	public static final String PHU_DAU_DAT="Phủ đầu dát";
 	public static final String LO_BAN_SAT="Lỗ ban sát";
 	public static final String DUONG_THAC="Dương thác";
 	public static final String DOC_HOA="Độc Hỏa";
 	public static final String QUY_KHOC="Quỷ khốc";
+	
+	
+	
 	
 }

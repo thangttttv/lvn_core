@@ -2,6 +2,7 @@ package com.lich.lvn;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
@@ -110,9 +111,14 @@ public class LichVanNien {
 	}
 	
 	public static void main(String[] args) {
+		Calendar calendar = Calendar.getInstance();
 		int dd = 22;
 		int mm = 10;
 		int yyyy = 2018;
+		
+		 dd = calendar.get(Calendar.DAY_OF_MONTH);
+		 mm = calendar.get(Calendar.MONTH)+1;
+		 yyyy = calendar.get(Calendar.YEAR);
 		
 		LichVanNien.getDateInfo(dd, mm, yyyy);
 	}

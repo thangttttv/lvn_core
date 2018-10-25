@@ -107,6 +107,14 @@ public class NhiThapBatTuUnit {
 	public static final String[] NTBT_THO = {
 			"Giác tinh tọa tác chủ vinh xương,\nNgoại tiến điền tài cập nữ lang,\nGiá thú hôn nhân sinh quý tử,\nVănh nhân cập đệ kiến Quân vương.\nDuy hữu táng mai bất khả dụng,\nTam niên chi hậu, chủ ôn đậu,\nKhởi công tu trúc phần mộ địa,\nĐường tiền lập kiến chủ nhân vong.",
 			"Đê tinh tạo tác chủ tai hung,\nPhí tận điền viên, thương khố không,\nMai táng bất khả dụng thử nhật,\nHuyền thằng, điếu khả, họa trùng trùng,\nNhược thị hôn nhân ly biệt tán,\nDạ chiêu lãng tử nhập phòng trung.\nHành thuyền tắc định tạo hướng một,\nCánh sinh lung ách, tử tôn cùng.",
+			"Can tinh tạo tác Trưởng phòng đường,\r\n" + 
+			"Thập nhật chi trung chủ hữu ương,\r\n" + 
+			"Điền địa tiêu ma, quan thất chức,\r\n" + 
+			"Đầu quân định thị hổ lang thương.\r\n" + 
+			"Giá thú, hôn nhân dụng thử nhật,\r\n" + 
+			"Nhi tôn, Tân phụ chủ không phòng,\r\n" + 
+			"Mai táng nhược hoàn phùng thử nhật,\r\n" + 
+			"Đương thời tai họa, chủ trùng tang.\r\n" ,
 			"Phòng tinh tạo tác điền viên tiến,\nHuyết tài ngưu mã biến sơn cương,\nCánh chiêu ngoại xứ điền trang trạch,\nVinh hoa cao quý, phúc thọ khang.\nMai táng nhược nhiên phùng thử nhật,\nCao quan tiến chức bái Quân vương.\nGiá thú: Thường nga quy Nguyệt điện,\nTam niên bào tử chế triều đường.",
 			"Tâm tinh tạo tác đại vi hung,\nCánh tao hình tụng, ngục tù trung,\nNgỗ nghịch quan phi, điền trạch thoái,\nMai táng tốt bộc tử tương tòng.\nHôn nhân nhược thị phùng thử nhật,\nTử tử nhi vong tự mãn hung.\nTam niên chi nội liên tạo họa,\nSự sự giáo quân một thủy chung.",
 			"Vĩ tinh tạo tác đắc thiên ân,\nPhú quý, vinh hoa, phúc thọ ninh,\nChiêu tài tiến bảo, tiến điền địa,\nHòa hợp hôn nhân, quý tử tôn.\nMai táng nhược năng y thử nhật,\nNam thanh, nữ chính, tử tôn hưng.\nKhai môn, phóng thủy, chiêu điền địa,\nĐại đại công hầu, viễn bá danh.",

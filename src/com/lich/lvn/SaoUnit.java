@@ -249,8 +249,8 @@ public class SaoUnit {
 		saoMap.put(SaoConstant.TAM_TANG, sao);
 		sao = new Sao(SaoConstant.THO_CAM, "Xấu", "", " Kỵ xây dựng nhà cửa; an táng", "");
 		saoMap.put(SaoConstant.THO_CAM, sao);
-		sao = new Sao(SaoConstant.PHU_DAU_DAT, "Xấu", "", " Kỵ khởi công, động thổ", "");
-		saoMap.put(SaoConstant.PHU_DAU_DAT, sao);
+		sao = new Sao(SaoConstant.PHU_DAU_SAT, "Xấu", "", " Kỵ khởi công, động thổ", "");
+		saoMap.put(SaoConstant.PHU_DAU_SAT, sao);
 		sao = new Sao(SaoConstant.HA_KHOI, "Xấu", "", " Xấu mọi việc, nhất là khởi công, động thổ,  xây dựng nhà cửa", "");
 		saoMap.put(SaoConstant.HA_KHOI, sao);
 		sao = new Sao(SaoConstant.HUYEN_VU, "Xấu", "", " Kỵ an táng", "");
@@ -269,7 +269,6 @@ public class SaoUnit {
 		saoMap.put(SaoConstant.THIEN_HOA, sao);
 		sao = new Sao(SaoConstant.QUY_KHOC, "Xấu", "", " Xấu với tế tự; an táng", "");
 		saoMap.put(SaoConstant.QUY_KHOC, sao);
-		
 	}
 	
 	public static Sao getSao(String saoKey) {
@@ -425,9 +424,10 @@ public class SaoUnit {
 		return saoXuatHien;
 	}
 	public static final String SAT_TINH[] = { "Thiên Tặc", "Địa Tặc", "Hỏa Tai","Nguyệt Hỏa Độc Hỏa","Nguyệt Yếm Đại Họa","Nguyệt Kiến chuyển sát"
-			,"Thiên Địa Chính Chuyển","Sao Lỗ Ban Sát","Sao Phủ Đầu Sát","Phi Ma Sát","Ngũ Quỷ","Băng Tiêu Ngọa Hãm","Hà Khôi","Cẩu Giảo",
+			,"Thiên Địa Chính Chuyển","Lỗ Ban Sát","Phủ Đầu Sát","Phi Ma Sát","Ngũ Quỷ","Băng Tiêu Ngọa Hãm","Hà Khôi","Cẩu Giảo",
 			"Quả Tú","Sát Chủ","Nguyệt Hình","Tội Chỉ","Thiên Cương (Diệt Môn)","Thiên Lại","Thiên Ngục","Thiên Hỏa","Tiểu Hồng Sa","Đại Hao (Tử Khí, Quan Phù)","Tiểu Hao",
-			"Nguyệt Hư","Hoàng Sa","Lục Bất Thành","Nhân Cách","Thần Cách","Bạch Hổ","Huyền Vũ","Câu Trận","Lôi Công","Cô Thần","Chu Tước"};
+			"Nguyệt Hư","Hoàng Sa","Lục Bất Thành","Nhân Cách","Thần Cách","Bạch Hổ","Huyền Vũ","Câu Trận","Lôi Công","Cô Thần","Chu Tước","Trùng phục","Quỷ khốc","Tam Tang"
+			,"Ngũ Hư","Tứ Thời Đại Mộ","Thổ Cấm","Ly Sàng","Trùng Tang"};
 	
 	public static List<String> saoSauXuatHienTheoNgayAm(int thangAl, String ngayCanChi) {
 		List<String> saoXuatHien = new ArrayList<>();
@@ -466,6 +466,18 @@ public class SaoUnit {
 		String loi_cong[]="  Dần;   Hợi;   Tỵ;   Thân;   Dần;   Hợi;   Tỵ;   Thân;   Dần;   Hợi;   Tỵ;   Thân".split(";");
 		String co_than[]="  Tuất;   Hợi;   Tý;   Sửu;   Dần;   Mão;   Thìn;   Tỵ;   Ngọ;   Mùi;   Thân;   Dậu".split(";");
 		String chu_tuoc[] = "Mão;Tị;Mùi;Dậu;Hợi;Sửu; Mão;Tị;Mùi;Dậu;Hợi; Sửu".split(";");
+		
+		String trung_phuc[] = "Canh,Canh,Canh;Tân,Tân,Tân;Kỷ,Kỷ,Kỷ;Nhâm,Nhâm,Nhâm;Quý,Quý,Quý;Mậu,Mậu,Mậu,Mậu,Mậu,Mậu;Giáp,Giáp,Giáp;Ất,Ất,Ất;Kỷ,Kỷ;Nhâm,Nhâm,Nhâm;Quý,Quý,Quý;Kỷ,Kỷ,Kỷ".split(";");
+		String quy_coc[]="Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất;   Tuất".split(";");
+		String tam_tang[]="Thìn;   Thìn;   Thìn;   Mùi;   Mùi;   Mùi;   Tuất;   Tuất;   Tuất;   Sửu;   Sửu;   Sửu".split(";");
+		String ngu_hu[]=" Tỵ;   Dậu;   Sửu;   Thân;   Tý;   Thìn;   Hợi;   Mão;   Mùi;   Dần;   Ngọ;   Tuất".split(";");
+		String tu_thoi_dai_mo[]=" Ất Mùi;   Ất Mùi;   Ất Mùi;   Bính Tuất;   Bính Tuất;   Bính Tuất;   Tân Sửu;   Tân Sửu;   Tân Sửu;   Nhâm Thìn;   Nhâm Thìn;   Nhâm Thìn".split(";");
+		String tho_cam[]=" Hợi;   Hợi;   Hợi;   Dần;   Dần;   Dần;   Tỵ;   Tỵ;   Tỵ;   Thân;   Thân;   Thân".split(";");
+		String ly_sang[] =" Dậu;   Dậu;   Dậu;   Dần;   Dần;   Dần;   Tuất;   Tuất;   Tuất;   Tỵ;   Tỵ;   Tỵ".split(";");
+		
+		String trung_tang[] ="Giáp,Giáp;Ất,Ất,Ất;Kỷ,Kỷ,Kỷ;Bính,Bính,Bính;Đinh,Đinh,Đinh;Kỷ,Kỷ,Kỷ,Kỷ,Kỷ,Kỷ;Canh,Canh;Tân,Tân,Tân;Kỷ,Kỷ;Nhâm,Nhâm,Nhâm;Quý,Quý,Quý;Kỷ,Kỷ,Kỷ".split(";");
+		
+		
 		List<String[]> saos = new ArrayList<>();
 		saos.add(thien_tac);
 		saos.add(dia_tac);
@@ -503,14 +515,21 @@ public class SaoUnit {
 		saos.add(loi_cong);
 		saos.add(co_than);
 		saos.add(chu_tuoc);
+		saos.add(trung_phuc);
+		saos.add(quy_coc);
+		saos.add(tam_tang);
+		saos.add(ngu_hu);
+		saos.add(tu_thoi_dai_mo);
+		saos.add(tho_cam);
+		saos.add(ly_sang);
+		saos.add(trung_tang);
 		
-		
-		//System.out.println("saos Xau:-------------->"+saos.size());
+		System.out.println("saos Xau:-------------->"+saos.size());
 		int i = 0;
 		for (String[] sao : saos) {
 			//System.out.println(SAT_TINH[i]);
 			if(sao.length<12)
-			//System.out.println(i+":-------------->"+sao.length);
+			System.out.println(i+":-------------->"+sao.length);
 			if(checkSaoXuatHien(sao,thangAl,ngayCanChi)) {
 				saoXuatHien.add(SAT_TINH[i]);
 			}
