@@ -426,7 +426,8 @@ public class SaoUnit {
 			,"Trùng phục","Quỷ khốc","Tam Tang"
 			,"Ngũ Hư","Tứ Thời Đại Mộ","Thổ Cấm","Ly Sàng","Trùng Tang",SaoConstant.VANG_VONG,SaoConstant.DIA_PHA,SaoConstant.HOANG_VU,
 			SaoConstant.THO_PHU,SaoConstant.THU_TU,SaoConstant.NGUYET_PHA,SaoConstant.KIEP_SAT,SaoConstant.KHONG_PHONG,SaoConstant.TU_THOI_CO_QUA,
-			SaoConstant.THIEN_ON,SaoConstant.CUU_KHONG,SaoConstant.AM_THAC,SaoConstant.THIEN_DIA_CHUYEN_SAT};
+			SaoConstant.THIEN_ON,SaoConstant.CUU_KHONG,SaoConstant.AM_THAC,SaoConstant.THIEN_DIA_CHUYEN_SAT,SaoConstant.DUONG_THAC,
+			SaoConstant.THO_ON,SaoConstant.DOC_HOA};
 	
 	public static List<String> saoSauXuatHienTheoNgayAm(int thangAl, String ngayCanChi) {
 		List<String> saoXuatHien = new ArrayList<>();
@@ -489,6 +490,9 @@ public class SaoUnit {
 		String cuu_khong[] = "Thìn,Thìn,Thìn;Sửu,Sửu,Sửu;Tuất,Tuất;Mùi,Mùi,Mùi;Mão,Mão,Mão;Tý,Tý;Dậu,Dậu;Ngọ,Ngọ,Ngọ;Dần,Dần,Dần;Hợi,Hợi;Thân,Thân;Tị,Tị,Tị".split(";");
 		String am_thac[] = "KC;Tân Dậu;Canh Thân;Đinh Mùi;KC;Đinh Tị;Giáp Thìn;Ất Mão;KC;Quý Sửu;KC;Quý Hợi".split(";");
 		String thien_dia_chuyen_sat[] = "Ất Mão;Ất Mão;Ất Mão;Bính Ngọ;KC;Bính Ngọ;KC;Tân Dậu;KC;Nhâm Tý;KC;Nhâm Tý".split(";");
+		String duong_thac[] = "KC;Ất Mão;Giáp Thìn;Đinh Tị;KC;Đinh Mùi;KC;Tân Dậu;KC;Quý Hợi;KC;Quý Sửu".split(";");
+		String tho_on[] = "Thìn,Thìn,Thìn;Tị,Tị;Ngọ,Ngọ,Ngọ;Mùi,Mùi,Mùi;Thân,Thân;Dậu,Dậu,Dậu,Dậu,Dậu;Tuất,Tuất;Hợi,Hợi,Hợi;Tý,Tý;Sửu,Sửu,Sửu;Dần,Dần;Mão,Mão".split(";");
+		String doc_hoa[] = "Tị,Tị,Tị;Thìn,Thìn;Mão,Mão,Mão;Dần,Dần;Sửu,Sửu,Sửu;Tý,Tý;Hợi,Hợi,Hợi;Tuất,Tuất;Dậu,Dậu;Thân,Thân,Thân;Mùi,Mùi;Ngọ,Ngọ,Ngọ".split(";");
 		
 		List<String[]> saos = new ArrayList<>();
 		saos.add(thien_tac);saos.add(dia_tac);saos.add(hoa_tai);saos.add(nguyet_hoa_doc_hoa);saos.add(nguyet_yem_dai_hoa);
@@ -498,6 +502,7 @@ public class SaoUnit {
 		saos.add(ngu_hu);saos.add(tu_thoi_dai_mo);saos.add(tho_cam);saos.add(ly_sang);saos.add(trung_tang);saos.add(vang_vong);
 		saos.add(dia_pha);saos.add(hoang_vu);saos.add(tho_phu);saos.add(thu_tu);saos.add(nguyet_pha);saos.add(kiep_sat);
 		saos.add(phong_khong);saos.add(tu_thoi_co_qua);saos.add(thien_on);saos.add(cuu_khong);saos.add(am_thac);saos.add(thien_dia_chuyen_sat);
+		saos.add(duong_thac);saos.add(tho_on);saos.add(doc_hoa);
 		
 		System.out.println("saos Xau:-------------->"+saos.size());
 		int i = 0;

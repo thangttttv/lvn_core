@@ -95,16 +95,8 @@ public class SaoConstant {
 	public static final String AM_THAC="Âm thác";
 	public static final String THIEN_DIA_CHUYEN_SAT="Thiên địa chuyển sát";
 	public static final String LO_BAN_SAT="Lỗ ban sát";
-	
-	public static final String THO_ON ="Thổ ôn (Thiên cẩu)";
-	
-	
-	
 	public static final String DUONG_THAC="Dương thác";
+	public static final String THO_ON ="Thổ ôn (Thiên cẩu)";
 	public static final String DOC_HOA="Độc Hỏa";
-	
-	
-	
-	
 	
 }
