@@ -58,7 +58,7 @@ public class SaoConstant {
 	public static final String THIEN_NGUC = "Thiên Ngục";
 	public static final String THIEN_HOA = "Thiên Hỏa";
 	public static final String TIEU_HONG_SA = "Tiểu Hồng Sa";
-	public static final String DAI_HAO = "Đại Hao (Tử Khí; Quan Phù)";
+	public static final String DAI_HAO = "Đại Hao (Tử Khí, Quan Phù)";
 	public static final String TIEU_HAO = "Tiểu Hao";
 	public static final String NGUYET_HU = "Nguyệt Hư";
 	public static final String HOANG_SA = "Hoàng Sa";
@@ -71,36 +71,40 @@ public class SaoConstant {
 	public static final String LOI_CONG = "Lôi Công";
 	public static final String CO_THAN = "Cô Thần";
 	public static final String CHU_TUOC ="Chu Tước";
-	
 	public static final String TRUNG_PHUC="Trùng phục";
+	public static final String QUY_KHOC="Quỷ khốc";
+	public static final String TAM_TANG="Tam tang";
+	public static final String THO_CAM="Thổ cẩm";
+	public static final String TRUNG_TANG="Trùng Tang";
+	public static final String NGU_HU="Ngũ hư";
+	public static final String TU_THOI_DAI_MO="Tứ thời đại mộ";
+	public static final String LY_SANG="Ly sàng";
+	public static final String VANG_VONG ="Vãng vong (Thổ kỵ)";
 	public static final String DIA_PHA="Địa phá";
 	public static final String HOANG_VU="Hoang vu";
-	public static final String TU_THOI_DAI_MO="Tứ thời đại mộ";
-	public static final String VANG_VONG ="Vãng vong (Thổ kỵ)";
 	public static final String THO_PHU="Thổ phủ";
 	public static final String NGUYET_KIEN_CHUYEN_SAT="Nguyệt Kiến chuyển sát";
-	public static final String CHU_TUOC_HAC_DAO="Chu tước hắc đạo";
 	public static final String THU_TU="Thụ tử";
 	public static final String NGUYET_PHA="Nguyệt phá";
 	public static final String BANG_TIEU_NGOA_HAM="Băng tiêu ngoạ hãm";
-	public static final String TRUNG_TANG="Trùng Tang";
 	public static final String KIEP_SAT="Kiếp sát";
 	public static final String KHONG_PHONG="Không phòng";
 	public static final String TU_THOI_CO_QUA="Tứ thời cô quả";
+	
 	public static final String THIEN_ON="Thiên ôn";
 	public static final String CUU_KHONG="Cửu không";
 	public static final String AM_THAC="Âm thác";
 	public static final String THIEN_DIA_CHUYEN_SAT="Thiên địa chuyển sát";
-	public static final String NGU_HU="Ngũ hư";
-	public static final String LY_SANG="Ly sàng";
+	
+	
 	public static final String THO_ON ="Thổ ôn (Thiên cẩu)";
 	public static final String NGUYET_HOA="Nguyệt Hỏa";
-	public static final String TAM_TANG="Tam tang";
-	public static final String THO_CAM="Thổ cẩm";
+	
+	
 	public static final String LO_BAN_SAT="Lỗ ban sát";
 	public static final String DUONG_THAC="Dương thác";
 	public static final String DOC_HOA="Độc Hỏa";
-	public static final String QUY_KHOC="Quỷ khốc";
+	
 	
 	
 	

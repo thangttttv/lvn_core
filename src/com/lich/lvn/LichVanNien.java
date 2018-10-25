@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
+import com.lich.lvn.model.DanhNgon;
+import com.lich.lvn.model.NgayLe;
 import com.lich.lvn.model.NhiThapBatTu;
 import com.lich.lvn.model.Sao;
 
@@ -96,13 +98,23 @@ public class LichVanNien {
 		    saos =	SaoUnit.saoSauXuatHienTheoNgayAm(lunarMonth, SunClass.getCanChiNgay(jd));
 		    for (String saoKey : saos) {
 		    	Sao catTinh  = SaoUnit.getSao(saoKey);
+		    	if(catTinh!=null) {
 		    	System.out.println("-------------------------------------------");
 		    	System.out.println("Cat Tinh :"+catTinh.name);
 		    	System.out.println("Cat Tinh - Nên làm :"+catTinh.nenLam);
 		    	System.out.println("Cat Tinh - Kiêng:"+catTinh.kiengLam);
 		    	System.out.println("Cat Tinh - Ngoại lệ:"+catTinh.ngoaiLe);
+		    	}
 			}
-		    
+		   // Ngay Le
+		    NgayLe ngayLe = NgayLeUnit.getNgayLe(SunClass.jdFromDate(dd, mm, yyyy));
+			if(ngayLe!=null)
+			System.out.println(ngayLe.le);
+			else System.out.println("Không co ngay le nao");
+			// Danh ngon
+			DanhNgon danhNgon = DanNgonUnit.getDanhNgon();
+			System.out.println(danhNgon.danhNgon);
+			
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

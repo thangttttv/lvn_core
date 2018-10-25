@@ -558,6 +558,60 @@ public class SunClass {
 
 		return date.getTime();
 	}
+	
+	
+	public static int[] convertSolar2ArrLunar(int dd, int mm, int yy, int timeZone) {
+		int dayNumber = jdFromDate(dd, mm, yy);
+		int k = (int) Math.floor((dayNumber - 2415021.076998695) / 29.530588853);
+		double monthStart = getNewMoonDay(k + 1, timeZone);
+		if (monthStart > dayNumber) {
+			monthStart = getNewMoonDay(k, timeZone);
+		}
+		double a11 = getLunarMonth11(yy, timeZone);
+		double b11 = a11;
+		int lunarYear = 0;
+		if (a11 >= monthStart) {
+			lunarYear = yy;
+			a11 = getLunarMonth11(yy - 1, timeZone);
+		} else {
+			lunarYear = yy + 1;
+			b11 = getLunarMonth11(yy + 1, timeZone);
+		}
+		System.out.println("dayNumber:" + dayNumber);
+		System.out.println("monthStart:" + monthStart);
+		int lunarDay = (int) (dayNumber - monthStart + 1);
+		int diff = (int) Math.floor((monthStart - a11) / 29);
+		int lunarLeap = 0;
+		int lunarMonth = diff + 11;
+		if (b11 - a11 > 365) {
+			int leapMonthDiff = getLeapMonthOffset(a11, timeZone);
+			if (diff >= leapMonthDiff) {
+				lunarMonth = diff + 10;
+				if (diff == leapMonthDiff) {
+					lunarLeap = 1;
+				}
+			}
+		}
+		if (lunarMonth > 12) {
+			lunarMonth = lunarMonth - 12;
+		}
+		if (lunarMonth >= 11 && diff < 4) {
+			lunarYear -= 1;
+		}
+
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = null;
+		try {
+			System.out.println(lunarYear + "-" + lunarMonth + "-" + lunarDay);
+			date = simpleDateFormat.parse(lunarYear + "-" + lunarMonth + "-" + lunarDay);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		int[] kq = {lunarDay,lunarMonth,lunarYear};
+		return kq;
+	}
 
 	
 	public static String chuyenDuongLichAmLich(int dd, int mm, int yy, int timeZone) {

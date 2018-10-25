@@ -213,7 +213,7 @@ public class NhiThapBatTuUnit {
 		int sub = jdNow - jd220170;
 		int stt = sub % 28;
 
-		if (stt > 0) {
+		if (stt >=0) {
 			nhiThapBatTu.sao = NTBT[stt];
 		} else {
 			stt = 28 + stt;
